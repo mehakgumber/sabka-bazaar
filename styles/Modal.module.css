@@ -1,0 +1,120 @@
+.modalOpen {
+  display: block;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.modalClose {
+  display: none;
+}
+
+/* Modal Content */
+.modalContent {
+  background-color: #e5e2e2;
+  margin: auto;
+  width: 28%;
+  height: 85%;
+  border: 1px solid #888;
+  top: 14%;
+  position: absolute;
+  left: 61%;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  color: white;
+  top: 0%;
+  /* background: black; */
+  right: 15px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cartContent {
+  top: 9%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.btn {
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #d6445c;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  height: 22px;
+  line-height: 14px;
+  width: 24px;
+  font-size: 2em;
+}
+.cartProductText {
+  display: flex;
+  flex-direction: column;
+}
+.cartItem {
+  display: flex;
+  background-color: #fff;
+  flex-direction: row;
+  margin-bottom: 14px;
+}
+.updateCartItem {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.noOfItems {
+  margin-left: 2rem;
+  margin-left: 9px;
+  /* line-height: 21px; */
+  margin-right: 8px;
+  font-weight: 700;
+}
+.prodPriceCalculation {
+  margin-left: 10px;
+  font-size: 14px;
+}
+.prodPrice {
+  margin-left: 3rem;
+}
+
+@media screen and (max-width: 769px) {
+  .modalContent {
+    background-color: #e5e2e2;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #888;
+    top: 0;
+    position: absolute;
+    left: 0;
+  }
+  .cartContent {
+    top: 9%;
+    position: absolute;
+    width: 100%;
+    left: 3px;
+    height: 398px;
+    overflow: auto;
+  }
+}

@@ -1,0 +1,12 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: lightblack;
+}
+
+.modal-main {
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

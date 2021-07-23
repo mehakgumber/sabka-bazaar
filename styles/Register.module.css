@@ -1,0 +1,72 @@
+@media screen and (min-width: 769px) {
+  .mainSection {
+    width: 70%;
+    margin: auto;
+  }
+}
+.registrationForm {
+  display: flex;
+  flex-direction: row;
+}
+.registerSection {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.signUpSection h2 {
+  margin-top: 19%;
+}
+.signUpSection p {
+  margin-top: 8%;
+  width: 24rem;
+  margin-right: 3rem;
+}
+.registerButton {
+  display: block;
+  width: 72%;
+  margin-top: 7%;
+  background-color: #bf2857;
+  border: 1px solid #bf2857;
+  color: #fff;
+  padding: 3px;
+  letter-spacing: -0.2px;
+  margin-bottom: 30px;
+}
+.error {
+  color: red;
+}
+.label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: 0.4s bottom, 0.4s opacity;
+}
+.textField {
+  position: relative;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  width: 72%;
+  margin-bottom: 21px;
+  padding: 0;
+  border-bottom: 1px solid black;
+}
+.textfield:focus + .label {
+  opacity: 1;
+  padding: 8px 0;
+  bottom: 95%;
+  color: red;
+}
+@media screen and (max-width: 768px) {
+  .mainSection {
+    width: 92%;
+    margin-left: 3%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .signUpSection p {
+    width: 3rem;
+  }
+}

@@ -1,0 +1,226 @@
+.flexContainer {
+  display: flex;
+}
+
+.flexRowDirection {
+  flex-direction: row;
+}
+
+.flexColumnDirection {
+  flex-direction: column;
+}
+
+.navBar {
+  flex: 1;
+}
+
+.flexStart {
+  justify-content: flex-start;
+}
+
+.flexEnd {
+  align-items: flex-end;
+}
+
+.flexRow {
+  flex-flow: row wrap;
+}
+
+@media screen and (min-width: 768px) {
+  .flexTop {
+    justify-content: flex-end;
+  }
+
+  .flexCart {
+    justify-content: flex-end;
+  }
+
+  .flexContainer {
+    display: flex;
+  }
+
+  .flexStart {
+    justify-content: flex-start;
+  }
+
+  .flexEnd {
+    align-items: flex-end;
+  }
+
+  .itemCenter {
+    align-items: center;
+  }
+
+  .flexRowDirection {
+    flex-direction: row;
+  }
+
+  .flexRow {
+    flex-flow: row wrap;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .flexItem {
+    flex: 1;
+  }
+
+  .flexStart {
+    justify-content: flex-start;
+  }
+
+  .flexEnd {
+    align-items: flex-end;
+  }
+
+  .flexColumnDirection {
+    flex-direction: column;
+  }
+
+  .flexRow {
+    flex-flow: row wrap;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0px 3px 10px lightgrey;
+    height: 7rem;
+    margin-bottom: 4px;
+  }
+
+  .logo {
+    padding: 6px;
+  }
+
+  .headerNav ul li {
+    list-style: none;
+    float: left;
+    padding: 20px 20px 20px 0;
+    margin-top: 28px;
+  }
+
+  .topNav {
+    margin: 0 0 2px 45px;
+  }
+  .topNav ul li {
+    list-style: none;
+    margin-bottom: 25px;
+    margin-right: 1rem;
+  }
+
+  .cart {
+    background-color: grey;
+    padding: 4px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .desktop {
+    width: 70%;
+    margin: auto;
+  }
+
+  .btn-cart {
+    width: 37%;
+    height: 52px;
+    border: 1px solid whitesmoke;
+    background-color: whitesmoke;
+    margin-top: 3px;
+  }
+}
+
+.menu .menuItem {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+/* .logoImage{
+   width: 100px !important;
+   height: 100px !important;
+  } */
+
+.logo {
+  width: 12rem;
+}
+
+@media only screen and (min-width: 427px) and (max-width: 768px) {
+  .header {
+    margin-bottom: 3px;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0px 3px 10px lightgrey;
+    height: 4rem;
+  }
+  .itemCenter {
+    padding: 1rem;
+  }
+  .headerNav {
+    display: flex;
+    flex-direction: row;
+  }
+  .headerNav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 20px;
+  }
+  .headerNav ul li {
+    margin-right: 20px;
+  }
+  .topNav ul {
+    list-style-type: none;
+    padding: 10px;
+  }
+  .topNav ul li {
+    font-size: 12px;
+    margin-right: 8px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    height: 8rem;
+    margin-bottom: 4px;
+  }
+}
+@media only screen and (min-width: 427px) and (max-width: 767px) {
+  .header {
+    height: 5rem;
+    margin-bottom: 4px;
+  }
+}
+
+.cartIcon {
+  margin-top: 13px;
+  margin-right: 10px;
+}
+.headerCartItems {
+  font-size: 16px;
+  margin-bottom: 8px;
+  margin-left: 3px;
+}
+.cartImage {
+  fill: #bf2857;
+}
+@media only screen and (max-width: 426px) {
+  .flexContainer {
+    justify-content: space-between;
+  }
+  .headerNav {
+    display: none !important;
+  }
+  .topNav {
+    display: none;
+  }
+  .header {
+    margin-bottom: 3px;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0px 3px 10px lightgrey;
+    height: 4rem;
+  }
+
+  .logo {
+    padding: 6px;
+  }
+}

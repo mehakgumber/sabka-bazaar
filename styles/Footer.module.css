@@ -1,0 +1,31 @@
+.cartFooter {
+  text-align: center;
+  background: #d6445c;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+.footer {
+  background-color: #e5e2e2;
+  opacity: 0.7;
+}
+.footer p {
+  padding: 22px;
+  margin-left: 10%;
+  font-size: 14px;
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .footer p {
+    padding: 17px;
+    margin-left: 10%;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .footer p {
+    padding: 2px;
+    margin-left: 10%;
+    font-size: 9px;
+  }
+}

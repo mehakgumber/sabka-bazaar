@@ -1,0 +1,247 @@
+@media screen and (min-width: 768px) {
+  .productCard {
+    position: relative;
+    flex-direction: row;
+    border-bottom: 2px solid lightgray;
+  }
+
+  .oddProductCard {
+    padding: 4rem;
+  }
+  .evenProductCard {
+    padding: 1rem;
+  }
+  .productContainer h2 {
+    font-size: 17px;
+  }
+  .productContainer p {
+    font-size: 69%;
+  }
+  .leftImage {
+    left: 61%;
+    position: absolute;
+    right: auto;
+    margin-left: 9%;
+    width: 48%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .rightImage {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 81%;
+    width: 269px;
+  }
+  .leftText {
+    width: 63%;
+  }
+  .productsImage {
+    margin-left: 5%;
+    width: 39%;
+  }
+  .evenProductCard h2 {
+    text-align: center;
+  }
+  .evenProductCard p {
+    text-align: center;
+    margin-top: 2rem;
+    width: 25rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.7px;
+  }
+  .evenProductCard a {
+    margin-top: 3%;
+    background-color: #bf2857;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    padding: 8px;
+    margin: 0 auto;
+    color: white;
+    letter-spacing: 0.7px;
+  }
+  .oddProductCard h2 {
+    text-align: center;
+  }
+  .oddProductCard p {
+    margin-top: 2rem;
+    width: 25rem;
+    text-align: center;
+    margin-bottom: 22px;
+    letter-spacing: 0.7px;
+    color: black;
+  }
+  .oddProductCard a {
+    background-color: #bf2857;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    padding: 8px;
+    margin: 0 auto;
+    color: white;
+    letter-spacing: 0.7px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .productContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .productsImage {
+    width: 20rem;
+    margin-top: 13%;
+  }
+  .leftImage h4 {
+    text-align: center;
+    margin-left: 1%;
+  }
+
+  .evenProductCard {
+    padding: 21px;
+    border-bottom: 2px solid lightgray;
+  }
+  .evenProductCard p {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 12%;
+    margin-bottom: 7%;
+    letter-spacing: -0.9px;
+    margin-left: 10%;
+  }
+  .evenProductCard a {
+    background-color: #bf2857;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    padding: 5px;
+    margin-left: 38px;
+    margin-top: 37px;
+    margin-right: 13px;
+    margin-bottom: 31px;
+    color: white;
+    letter-spacing: 0.2px;
+  }
+  .oddProductCard h4 {
+    text-align: center;
+  }
+  .oddProductCard p {
+    text-align: center;
+
+    margin-top: 1rem;
+    margin-left: 1rem;
+    letter-spacing: -0.9px;
+    font-size: 13px;
+    /* margin: 0 auto; */
+    margin-right: 1rem;
+  }
+  .oddProductCard a {
+    background-color: #bf2857;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    padding: 5px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+    letter-spacing: 0.2px;
+  }
+  .rightImage {
+    display: flex;
+    align-items: center;
+  }
+  .oddProductCard {
+    padding: 15px;
+    border-bottom: 2px solid lightgray;
+  }
+  .oddProductCard .leftText {
+    width: 14rem;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 727px) {
+  .productContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .leftImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+  }
+  .leftImage h4 {
+    text-align: center;
+    margin-left: 1%;
+  }
+
+  .evenProductCard {
+    padding: 21px;
+    border-bottom: 2px solid lightgray;
+  }
+  .evenProductCard p {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 12%;
+    margin-bottom: 7%;
+    letter-spacing: -0.9px;
+    margin-left: 10%;
+  }
+  .evenProductCard a {
+    background-color: #bf2857;
+
+    width: max-content;
+    padding: 8px;
+    /* margin-left: 38px; */
+    margin-top: 37px;
+    /* margin-right: 13px; */
+    /* margin-bottom: 31px; */
+    color: white;
+    letter-spacing: 0.2px;
+  }
+
+  .oddProductCard h4 {
+    text-align: center;
+  }
+  .oddProductCard p {
+    text-align: center;
+
+    margin-top: 1rem;
+    margin-left: 1rem;
+    letter-spacing: -0.9px;
+    font-size: 13px;
+    /* margin: 0 auto; */
+    margin-right: 1rem;
+  }
+  .oddProductCard a {
+    background-color: #bf2857;
+    margin-left: 50%;
+    /* text-align: center; */
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 5px;
+    /* margin-left: 38px; */
+    margin-top: 37px;
+    /* margin-right: 13px; */
+    /* margin-bottom: 31px; */
+    color: white;
+    letter-spacing: 0.2px;
+  }
+  .rightImage {
+    display: flex;
+    align-items: center;
+  }
+  .oddProductCard {
+    padding: 2px;
+    border-bottom: 2px solid lightgray;
+  }
+  .oddProductCard .leftText {
+    padding: 57px;
+  }
+}
