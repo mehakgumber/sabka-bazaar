@@ -6,12 +6,9 @@ import ProductItem from "./Product/Product";
 import { useScreenWidth as useWindowResize } from "../Common/useScreenWidth";
 import Link from "next/link";
 import styles from "../../styles/Products.module.css";
-let cartProductss = [];
+let cartProducts = [];
 
-const colourOptions = [
-  { value: "m", label: "m" },
-  { value: "n", label: "n" },
-];
+
 const customStyles = {
   menu: (provided, state) => ({
     ...provided,
@@ -38,9 +35,11 @@ const customStyles = {
   }),
 };
 
+
 export const ThemeContext = createContext();
 
-function Plp(props) {
+function Products(props) {
+
   const { products, categories } = props;
   const [displayProp, setDisplayProp] = useState("");
   const { width } = useWindowResize();
@@ -134,12 +133,12 @@ function Plp(props) {
             price: product.price,
           };
 
-          cartProductss = JSON.parse(localStorage.getItem("cartProducts"));
-          if (cartProductss == null) cartProductss = [];
+          cartProducts = JSON.parse(localStorage.getItem("cartProducts"));
+          if (cartProducts == null) cartProducts = [];
 
-          cartProductss.push(cartItem);
+          cartProducts.push(cartItem);
 
-          localStorage.setItem("cartProducts", JSON.stringify(cartProductss));
+          localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
           setCartProducts(JSON.parse(localStorage.getItem("cartProducts")));
         }
       }
@@ -174,10 +173,8 @@ function Plp(props) {
     });
 
   return (
-    <ThemeContext.Provider value={cartProducts}>
       <div className="container">
         <Header
-          cartProducts={cartProducts}
           handleIncrement={handleIncrement}
           handleDecrement={handleDecrement}
         />
@@ -187,7 +184,10 @@ function Plp(props) {
               <Select
                 styles={customStyles}
                 classNamePrefix="select"
-                options={colourOptions}
+                options={ props.categories.map(cat=> {
+                  const {name}=cat;
+
+                  return {value: name, label: name}})}
               />
             </div>
           )}
@@ -215,8 +215,7 @@ function Plp(props) {
 
         <Footer text="Copyright &copy; 2011-2018 sabka bazaar Grocery Supplies Pvt. Ltd" />
       </div>
-    </ThemeContext.Provider>
   );
 }
 
-export default Plp;
+export default Products;

@@ -59,14 +59,24 @@
   bottom: 95%;
   color: red;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 427px) and (max-width: 768px) {
   .mainSection {
     width: 92%;
     margin-left: 3%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 426px) {
+  .mainSection{
+    width: 80%;
+    margin-left: 3%;
+  }
+  .registrationForm{
+    display: flex;
+    flex-direction: column;
+  }
   .signUpSection p {
-    width: 3rem;
+   
+    width: auto;
   }
 }
+

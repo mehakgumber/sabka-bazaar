@@ -1,6 +1,8 @@
-.loginSection {
+@media screen and (min-width: 427px) and (max-width: 1024px) {
+  .loginSection {
   display: flex;
   flex-direction: row;
+  }
 }
 @media screen and (min-width: 427px) {
   .mainSection {
@@ -80,7 +82,7 @@
   width: 72%;
   cursor: pointer;
 }
-@media screen and (max-width: 426px) {
+@media screen and (min-width: 327px) and (max-width: 425px) {
   .mainSection {
     width: 100%;
   }
@@ -102,4 +104,26 @@
     margin-top: 2%;
     letter-spacing: -1.2px;
   }
+}
+@media screen and (max-width: 426px) {
+  .mainSection {
+    width: 85%;
+    margin: auto;
+  }
+.loginSection{
+   display: flex;
+   flex-direction: column;
+ }
+ .shoppingForm h2{
+   text-align: center;
+ }
+ .shoppingForm p{
+   text-align: center;
+   font-size: 16px;
+   margin-top: 0.6rem;
+ }
+ .loginForm{
+   text-align: center;
+   margin-bottom: 13px;
+ }
 }
