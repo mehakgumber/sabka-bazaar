@@ -112,13 +112,13 @@ function Header(props) {
                   <path d="M0 0h48v48H0z" fill="none" />
                 </svg>
                 <span className={styles.headerCartItems}>
-                  {/* {typeof window !== "undefined"
+                {typeof window !== "undefined"
                     ? JSON.parse(localStorage.getItem("cartProducts")).length
                     : 0}{" "}
                   {typeof window !== "undefined" ?
                   (JSON.parse(localStorage.getItem("cartProducts")).length === 1
                     ? "item"
-                    : "items") : "item"} */}
+                    : "items") : "item"}
                 </span>
               </div>
             </div>

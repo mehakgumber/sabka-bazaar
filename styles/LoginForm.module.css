@@ -1,4 +1,4 @@
-@media screen and (min-width: 427px) and (max-width: 1024px) {
+@media screen and (min-width: 427px) {
   .loginSection {
   display: flex;
   flex-direction: row;
@@ -27,7 +27,6 @@
     font-size: 17px;
     padding: 2% 0;
     letter-spacing: -1.2px;
-    margin-top: 1rem;
   }
 }
 .error {
@@ -105,7 +104,7 @@
     letter-spacing: -1.2px;
   }
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 426px) and (max-width: 760px) {
   .mainSection {
     width: 85%;
     margin: auto;

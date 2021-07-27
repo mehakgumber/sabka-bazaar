@@ -15,6 +15,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en-CA">
         <Head>
+          <title>SABKA BAZAAR</title>
         </Head>
         <body>
           <Main />

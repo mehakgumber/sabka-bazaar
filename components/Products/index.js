@@ -6,7 +6,7 @@ import ProductItem from "./Product/Product";
 import { useScreenWidth as useWindowResize } from "../Common/useScreenWidth";
 import Link from "next/link";
 import styles from "../../styles/Products.module.css";
-let cartProducts = [];
+let cartItems = [];
 
 
 const customStyles = {
@@ -38,7 +38,7 @@ const customStyles = {
 
 export const ThemeContext = createContext();
 
-function Products(props) {
+function Plp(props) {
 
   const { products, categories } = props;
   const [displayProp, setDisplayProp] = useState("");
@@ -133,12 +133,12 @@ function Products(props) {
             price: product.price,
           };
 
-          cartProducts = JSON.parse(localStorage.getItem("cartProducts"));
-          if (cartProducts == null) cartProducts = [];
+          cartItems = JSON.parse(localStorage.getItem("cartProducts"));
+          if (cartItems == null) cartItems = [];
 
-          cartProducts.push(cartItem);
+          cartItems.push(cartItem);
 
-          localStorage.setItem("cartProducts", JSON.stringify(cartProducts));
+          localStorage.setItem("cartProducts", JSON.stringify(cartItems));
           setCartProducts(JSON.parse(localStorage.getItem("cartProducts")));
         }
       }
@@ -218,4 +218,4 @@ function Products(props) {
   );
 }
 
-export default Products;
+export default Plp;
